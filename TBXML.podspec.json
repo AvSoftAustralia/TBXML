@@ -15,7 +15,7 @@
   "platforms": {
     "ios": null
   },
-  "source_files": "*.{h,m}",
+  "source_files": "*/*.{h,m}",
   "libraries": "z",
   "requires_arc": false
 }
