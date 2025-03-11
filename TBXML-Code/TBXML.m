@@ -113,11 +113,8 @@
         if (result != D_TBXML_SUCCESS) 
             return self;
         
-        NSData *data = [aXMLString dataUsingEncoding:NSUTF8StringEncoding];
-        bytes = data.bytes;
-        
 		// copy string to byte array
-		//[aXMLString getBytes:bytes maxLength:bytesLength usedLength:0 encoding:NSUTF8StringEncoding options:0 range:NSMakeRange(0, bytesLength) remainingRange:nil];
+		[aXMLString getBytes:bytes maxLength:bytesLength usedLength:0 encoding:NSUTF8StringEncoding options:0 range:NSMakeRange(0, bytesLength) remainingRange:nil];
 		
 		// set null terminator at end of byte array
 		bytes[bytesLength] = 0;
